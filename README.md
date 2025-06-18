@@ -48,8 +48,10 @@ The evaluate script will create a folder called debug that will show sigmoid thr
 
 To predict ICD-10 codes for new clinical notes, use the `predict.py` script. You can pass a text file or a string as input:
 
+You should pass in the threshold obtained after running `evaluate.py`
+
 ```bash
-python src/predict.py --text "Patient presents with chest pain and shortness of breath."
+python src/predict.py --threshold 0.15 --text "Patient presents with chest pain and shortness of breath."
 ```
 
 ## Notes
