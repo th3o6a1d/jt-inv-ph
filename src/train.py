@@ -29,8 +29,8 @@ if __name__ == "__main__":
 
     print("Total positive labels in y_train:", y_train.sum())
     print("Total positive labels in y_test:", y_test.sum())
-    print("Per-class positive labels in y_train:", y_train.sum(axis=0))
-    print("Per-class positive labels in y_test:", y_test.sum(axis=0))
+    # print("Per-class positive labels in y_train:", y_train.sum(axis=0))
+    # print("Per-class positive labels in y_test:", y_test.sum(axis=0))
 
     model.train()
     for epoch in range(EPOCHS):
