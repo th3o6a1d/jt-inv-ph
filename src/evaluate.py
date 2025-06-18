@@ -45,11 +45,11 @@ if __name__ == "__main__":
     # Binarize y_test using loaded mlb
     y_test = mlb.transform(y_test)
 
-    print("First 5 raw y_test examples:", y_test[:5])
-    print("Transformed y_test shape:", y_test.shape)
-    print("First 5 transformed y_test rows:", y_test[:5])
-    print("Inverse transform of first row:", mlb.inverse_transform(y_test[:1]))
-    print("Number of all-zero rows in y_test:", np.sum(np.sum(y_test, axis=1) == 0))
+    # print("First 5 raw y_test examples:", y_test[:5])
+    # print("Transformed y_test shape:", y_test.shape)
+    # print("First 5 transformed y_test rows:", y_test[:5])
+    # print("Inverse transform of first row:", mlb.inverse_transform(y_test[:1]))
+    # print("Number of all-zero rows in y_test:", np.sum(np.sum(y_test, axis=1) == 0))
 
     test_data = torch.utils.data.TensorDataset(X_test['input_ids'], X_test['attention_mask'])
     test_loader = torch.utils.data.DataLoader(test_data, batch_size=BATCH_SIZE)
