@@ -1,4 +1,4 @@
-# Phare Health ICD-10 Classification Take-Home
+# ICD-10 Classification Take-Home
 
 This project demonstrates an end-to-end pipeline for classifying clinical notes into ICD-10 codes using the SynthEHR ICD-10-CM dataset. The core of the solution is a PyTorch-based transformer model, fine-tuned for multi-label classification of medical text.
 
